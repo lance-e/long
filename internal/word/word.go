@@ -30,3 +30,19 @@ func UnderScoreToLowerCamelCase(s string) string {
 	return string(unicode.ToLower(rune(s[0]))) + s[1:]
 
 }
+
+// CamelCaseToUnderScore 将驼峰转化为下划线
+func CamelCaseToUnderScore(s string) string {
+	var output []rune
+	for i, r := range s {
+		if i == 0 {
+			output = append(output, unicode.ToLower(r))
+		}
+		if unicode.IsUpper(r) {
+			output = append(output, '_')
+			output = append(output, unicode.ToLower(r))
+		}
+		output = append(output, r)
+	}
+	return string(output)
+}
