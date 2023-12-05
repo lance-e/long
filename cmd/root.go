@@ -10,4 +10,5 @@ func Excute() error {
 }
 func init() {
 	rootCmd.AddCommand(wordCmd) //增加word子命令
+	rootCmd.AddCommand(timeCmd) //增加time子命令
 }
