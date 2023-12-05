@@ -5,10 +5,24 @@ import (
 	"log"
 )
 
+var name string
+
 func main() {
-	var name string
-	flag.StringVar(&name, "name", "lance", "用户名")
-	flag.StringVar(&name, "n", "lance", "用户名")
 	flag.Parse()
-	log.Printf("name: %s", name)
+	args := flag.Args()
+	if len(args) <= 0 {
+		return
+	}
+	switch args[0] {
+	case "go":
+		cmd := flag.NewFlagSet("go", flag.ExitOnError)
+		cmd.StringVar(&name, "name", "go语言", "帮助信息")
+		_ = cmd.Parse(args[1:])
+	case "java":
+		cmd := flag.NewFlagSet("java", flag.ExitOnError)
+		cmd.StringVar(&name, "n", "java语言", "帮助信息")
+		_ = cmd.Parse(args[1:])
+
+	}
+	log.Printf("Name:%s", name)
 }
