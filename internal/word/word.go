@@ -40,9 +40,8 @@ func CamelCaseToUnderScore(s string) string {
 		}
 		if unicode.IsUpper(r) {
 			output = append(output, '_')
-			output = append(output, unicode.ToLower(r))
 		}
-		output = append(output, r)
+		output = append(output, unicode.ToLower(r))
 	}
 	return string(output)
 }
