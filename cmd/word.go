@@ -2,6 +2,7 @@ package cmd
 
 import "github.com/spf13/cobra"
 
+// 子命令word的设置
 var wordCmd = &cobra.Command{
 	Use:   "word",
 	Short: "单词格式转换",
@@ -10,3 +11,5 @@ var wordCmd = &cobra.Command{
 
 	},
 }
+
+func init() {}
