@@ -30,15 +30,14 @@ func Translate(query string, to string) {
 	basicUrl := "https://fanyi-api.baidu.com/api/trans/vip/translate"
 	from := "auto" //可指定从哪种语言翻译
 	//先拼接sign
-	appid := "20231227001922968"     //替换为自己的appid
-	secret := "Fgdb5ZNk39iJSP7kTTBY" //替换为自己的密钥
+	appid := ""  //替换为自己的appid
+	secret := "" //替换为自己的密钥
 	salt := "random"
 	s := strings.Join([]string{appid, query, salt, secret}, "")
 	//md5加密
 	sign := md5.Sum([]byte(s))
 	finalSign := hex.EncodeToString(sign[:])
 	//再进行url的拼接
-	//http://api.fanyi.baidu.com/api/trans/vip/translate?q=apple&from=en&to=zh&appid=2015063000000001&salt=1435660288&sign=f89f9594663708c1605f3d736d01d2d4
 	finalUrl := strings.Join([]string{basicUrl, "?", "q=", query, "&from=", from, "&to=", to, "&appid=", appid, "&salt=", salt, "&sign=", finalSign}, "")
 
 	//开始进行网络请求
