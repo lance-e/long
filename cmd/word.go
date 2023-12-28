@@ -3,7 +3,7 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 	"log"
-	"simpleCliApplication/internal/word"
+	"long/internal/word"
 	"strings"
 )
 

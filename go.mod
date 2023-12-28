@@ -1,4 +1,4 @@
-module simpleCliApplication
+module long
 
 go 1.21.1
 

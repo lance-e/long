@@ -2,7 +2,7 @@ package main
 
 import (
 	"log"
-	"simpleCliApplication/cmd"
+	"long/cmd"
 )
 
 func main() {

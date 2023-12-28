@@ -30,8 +30,8 @@ func Translate(query string, to string) {
 	basicUrl := "https://fanyi-api.baidu.com/api/trans/vip/translate"
 	from := "auto" //可指定从哪种语言翻译
 	//先拼接sign
-	appid := ""  //替换为自己的appid
-	secret := "" //替换为自己的密钥
+	appid := "20231227001922968"     //替换为自己的appid
+	secret := "Fgdb5ZNk39iJSP7kTTBY" //替换为自己的密钥
 	salt := "random"
 	s := strings.Join([]string{appid, query, salt, secret}, "")
 	//md5加密
