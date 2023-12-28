@@ -5,10 +5,8 @@
 * [X]  time
 * [X]  word
 * [X]  translate
-* [ ]  email
 
 #### Install
-
 
 ~~~bash
 git init 
