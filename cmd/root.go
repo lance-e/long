@@ -12,4 +12,5 @@ func init() {
 	rootCmd.AddCommand(wordCmd)      //增加word子命令
 	rootCmd.AddCommand(timeCmd)      //增加time子命令
 	rootCmd.AddCommand(translateCmd) // 增加translate子命令
+	rootCmd.AddCommand(artCmd)       //增加art子命令
 }
