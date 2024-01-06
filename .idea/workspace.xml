@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ddf03a-3aec-472c-86a3-decbf874d7c3" name="Changes" comment="delete some incomplete function">
-      <change afterPath="$PROJECT_DIR$/cmd/art.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/gopher.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/art/art.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/root.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/root.go" afterDir="false" />
-    </list>
+    <list default="true" id="a6ddf03a-3aec-472c-86a3-decbf874d7c3" name="Changes" comment="add:the art function" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +105,8 @@
     <MESSAGE value="fix:the details" />
     <MESSAGE value="fix:delete some catch" />
     <MESSAGE value="delete some incomplete function" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete some incomplete function" />
+    <MESSAGE value="add:the art function" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:the art function" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
