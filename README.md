@@ -5,18 +5,8 @@
 * [X]  time
 * [X]  word
 * [X]  translate
+* [X]  art
 
-#### Install
-
-~~~bash
-git init 
-git clone https://github.com/lance547/long.git
-cd long
-
-go build
-go install 
-
-~~~
 
 #### Command:
 
